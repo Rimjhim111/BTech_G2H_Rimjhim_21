@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+ int main()
+ {
+    float c,f;
+    printf("enter centigrade");
+    scanf("%f",c);
+    f = (9/5)*c+32;
+    printf("the farenheit is %f",f);
+    return 0 ;
+ }
