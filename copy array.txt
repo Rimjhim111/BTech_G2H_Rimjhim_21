@@ -1,0 +1,21 @@
+ #include<stdio.h>
+ int main()
+  {
+   int ar[10],i,n,ar2[10];
+    printf("enter size of an array:");
+     scanf("%d", &n);
+     printf("enter elements:");
+     for(i=0;i<n;i++)
+     {
+         scanf("%d", &ar[i]);
+     }
+    for(i=0;i<n;i++)
+    {
+        ar2[i]=ar[i];
+   }
+   printf("above array in copied in array ar2 \n");
+   for(i=0;i<n;i++){
+       printf("%d \n",ar2[i]);
+   }
+     return 0;
+ }
