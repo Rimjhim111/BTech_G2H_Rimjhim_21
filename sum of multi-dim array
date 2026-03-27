@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+int main() 
+{
+   int s=0,n1,n2,i,j;
+   printf("enter the row of an array1:",n1);
+   scanf("%d",&n1);
+   printf("enter the column of an array2:",n2);
+   scanf("%d",&n2);
+   int ar1[n1][n2];
+   int ar2[n1][n2];
+   printf("enter elements:");
+   for(i=0;i<n1;i++)
+   {
+   for(j=0;j<n2;j++)
+    {
+       scanf("%d",&ar1[i][j]);
+    }
+  }
+  printf("enter elements:");
+   for(i=0;i<n1;i++)
+   {
+       for(j=0;j<n2;j++)
+       {
+           scanf("%d",&ar2[i][j]);
+       }
+   }
+ 
+  for(i=0;i<n1;i++){
+      for(j=0;j<n2;j++){
+          s=s+ar1[i][j]+ar2[i][j];
+      }
+  }
+   
+printf("the sum of an multi-dim array:%d",s);
+   
+   return 0;
+  
+}
