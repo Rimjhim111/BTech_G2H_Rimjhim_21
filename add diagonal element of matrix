@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int n1,n2,s=0,i,j;
+    printf("enter rows:");
+    scanf("%d",&n1);
+    printf("enter columns:");
+    scanf("%d",&n2);
+    int a[n1][n2];
+    printf("Enter elements:");
+    for(i=0;i<n1;i++)
+    {
+        for(j=0;j<n2;j++)
+        {
+         scanf("%d",&a[i][j]);   
+        }
+    }
+    
+    for(i=0;i<n1;i++)
+    {
+        for(j=0;j<n2;j++)
+        {
+            if(i==j)
+            {
+                s=s+a[i][j];
+            }
+            
+        }
+    }
+    
+    printf("The sum of diagonal element is \n %d",s);
+    return 0;
+}
